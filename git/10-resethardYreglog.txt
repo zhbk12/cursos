@@ -10,3 +10,9 @@ git reflog
 en caso se haya usado git reset --hard lo cual hace que en git log ya no aparescan los commit 
 con git reflog hace que aparezcan para recuperar la informacion  es decir es como el log pero mas potente 
 
+------------------------------------------------------
+
+adicional luego se podra recuperar lo vanzado con el reset -hard este funciona tanto hacia adelante como hacia atras 
+
+estos son las versiones mas potentes de checkout y log mas potentes 
+

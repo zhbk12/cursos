@@ -1,0 +1,7 @@
+git fetch 
+
+descarga el historial de cambios sin descargar los cambios 
+
+git pull origin
+
+descarga los cambios realizados en el github al entorno loclal

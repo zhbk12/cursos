@@ -1,0 +1,3 @@
+git clone rutaDelRepositorioGithub
+
+se usa para descargar todo sessuele usar cuando se agrega un nuevotrabajador al proyecto
