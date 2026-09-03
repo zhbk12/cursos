@@ -1,0 +1,15 @@
+git cherry-pick iddelCommit
+
+se usa cuando cuando se quiere ir a un commit concreto y traerlo a la rama que se creo y poder trabajr con eso 
+por ejemplo si se uso un estilo que se quisiera volver a usar 
+
+git cherry-pick --abort 
+
+esto se usara para poder cancelar el llamado del commit que se llama orinalmente con el cherry-pick
+
+------------------------------------------------
+
+git rebase 
+
+se usa para traer ramas antiguas al entorno actual para poder seguir avanzando en base a eso
+

@@ -1,3 +1,10 @@
 git pushseusa para subir lo que se tiene en en entorno local al entornovitual
 
 cambios realizados para larama 4
+
+
+para subir una rama creada al gibhub y que en gibhub aparesca una rama recien creada
+
+ git push --set-upstream origin ramaCreada
+
+validar cambios realizados

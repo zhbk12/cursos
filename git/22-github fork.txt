@@ -1,0 +1,11 @@
+se usas para copiar desde unacuenta github a otra 
+el usuario que tiene el codigo debe dar click en el boton fork para poder conpartirlo
+
+lo ideal cuando se trabaja es primero usar el fork para copiar en un repositorio propio ylueego clonarlo para descargarlos en entorno local
+
+osea primero hacer el fork y luego usar 
+
+git clone 
+
+para poder descargar lo de fork en repositorio local y poder trabajr caasi de manera independiente
+
