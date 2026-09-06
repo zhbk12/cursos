@@ -11,5 +11,8 @@ esto se usara para poder cancelar el llamado del commit que se llama orinalmente
 
 git rebase 
 
-se usa para traer ramas antiguas al entorno actual para poder seguir avanzando en base a eso
+se usa para traer ramas antiguas al entorno actual para poder seguir avanzando en base a eso incluso modifica el historial de commits ojo eso es muy delicado y casi no se usa 
 
+git rebase --abort 
+
+aborta el intento de llamado a la rama

@@ -1,0 +1,3 @@
+No se suele borrar es decir no se suele usar 
+git revert 
+borra uncommit en especifico y crea uno nuevo 
