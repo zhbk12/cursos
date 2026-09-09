@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Seudo Clases</h2>
+
+    <ul>
+        <li>:hover - Se aplica cuando el usuario pasa el cursor sobre un elemento.</li>
+        <li>:active - Se aplica cuando un elemento está siendo activado (por ejemplo, cuando se hace clic en un enlace).</li>
+        <li>:focus - Se aplica cuando un elemento ha recibido el foco (por ejemplo, cuando se hace clic en un campo de formulario).</li>
+        <li>:first-child - Se aplica al primer hijo de un elemento.</li>
+        <li>:last-child - Se aplica al último hijo de un elemento.</li>
+        <li>:nth-child(n) - Se aplica al enésimo hijo de un elemento, donde n puede ser un número, una palabra clave o una fórmula.</li>
+        <li>:not(selector) - Se aplica a todos los elementos que no coinciden con el selector especificado.</li>
+    </ul>
+
+    <h4>Ejemplo de uso de seudo clases:</h4>
+    <button class="buttonHover">Cuando se Pasa por encima</button>
+    <button class="buttonActive">Solo cuando se le hace clic</button>
+
+    <div>
+        <p>Primer párrafo</p>
+        <p>Segundo párrafo</p>
+        <p>Tercer párrafo</p>
+        <p>Cuarto párrafo</p>
+    </div>
+
+    <input type="text" placeholder="Escribe tu nombre">
+
+    <style>
+        .buttonHover{
+            background-color: lightgray;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .buttonHover:hover{
+            background-color: blue;
+            color: white;
+        }
+        .buttonActive{
+            background-color: lightgray;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .buttonActive:active{
+            background-color: red;
+            color: white;
+        }
+
+        p:first-child {
+            color: red;
+        }
+        p:last-child {
+            color: blue;
+        }
+
+        p:nth-child(2) {
+            color: green;
+        }
+        /*Seleccionado*/
+        input:focus {
+            border: 2px solid blue;
+            outline: none;
+        }
+
+    </style>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>flex-grow</h4>
+    <p>Controla cómo se distribuye el espacio disponible entre los elementos flexibles.</p>
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid black; /**/
+        }
+        .flex-item{
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+        .flex-item:nth-child(1){
+            flex-grow: 1; /**/
+        }
+        .flex-item:nth-child(2){
+            flex-grow: 2; /**/
+        }
+        .flex-item:nth-child(3){
+            flex-grow: 3; /**/
+        }
+    </style>
+
+    <h4>flex-shrink</h4>
+    <p>Controla cómo se reduce el tamaño de los elementos flexibles cuando el espacio
+    disponible es insuficiente.</p>
+    <div class="flex-container2">
+        <div class="flex-item2">Item 1</div>
+        <div class="flex-item2">Item 2</div>
+        <div class="flex-item2">Item 3</div>
+    </div>
+    
+    <style>
+        .flex-container2 {
+            display: flex;
+            width: 300px;
+            border: 2px solid black;
+        }
+
+        .flex-item2 {
+            background-color: lightgreen;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            width: 200px;
+        }
+
+        .flex-item2:nth-child(1) {
+            flex-shrink: 3;
+        }
+
+        .flex-item2:nth-child(2) {
+            flex-shrink: 1;
+        }
+
+        .flex-item2:nth-child(3) {
+            flex-shrink: 3;
+        }
+    </style>
+
+    <h4>flex-basis</h4>
+
+    <p>Controla el tamaño inicial máximo de los elementos flexibles.</p>
+    <div class="flex-container3">
+        <div class="flex-item3">Item 1</div>
+        <div class="flex-item3">Item 2</div>
+        <div class="flex-item3">Item 3</div>
+    </div>
+    <style>
+        .flex-container3 {
+            display: flex;
+            border: 2px solid black;
+        }
+
+        .flex-item3 {
+            background-color: lightcoral;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .flex-item3:nth-child(1) {
+            flex-basis: 100px; /**/
+        }
+
+        .flex-item3:nth-child(2) {
+            flex-basis: 200px; /**/
+        }
+
+        .flex-item3:nth-child(3) {
+            flex-basis: 300px; /**/
+        }
+    </style>
+
+    <h3>Alinacion aling-items</h3>
+    <p>aling-items : se usa para alinear los elementos flexibles en el eje transversal.</p>
+
+    <h4>text-align: center;</h4>
+    <div class="flex-container4">
+        <div class="flex-item4">Item 1</div>
+        <div class="flex-item4">Item 2</div>
+        <div class="flex-item4">Item 3</div>
+    </div>
+    <style>
+        .flex-container4 {
+            display: flex;
+            height: 200px;
+            border: 2px solid black;
+            align-items: center; /**/
+        }
+
+        .flex-item4 {
+            background-color: lightyellow;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+
+    <h4>text-align: flex-start;</h4>
+    <div class="flex-container5">
+        <div class="flex-item5">Item 1</div>
+        <div class="flex-item5">Item 2</div>
+        <div class="flex-item5">Item 3</div>
+    </div>
+    <style>
+        .flex-container5 {
+            display: flex;
+            height: 200px;
+            border: 2px solid black;
+            align-items: flex-start; /**/
+        }
+
+        .flex-item5 {
+            background-color: lightpink;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+
+    <h4>text-align: flex-end;</h4>
+    <div class="flex-container6">
+        <div class="flex-item6">Item 1</div>
+        <div class="flex-item6">Item 2</div>
+        <div class="flex-item6">Item 3</div>
+    </div>
+    <style>
+        .flex-container6 {
+            display: flex;
+            height: 200px;
+            border: 2px solid black;
+            align-items: flex-end; /**/
+        }
+
+        .flex-item6 {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+
+    <h4>text-align: stretch;</h4>
+    <div class="flex-container7">
+        <div class="flex-item7">Item 1</div>
+        <div class="flex-item7">Item 2</div>
+        <div class="flex-item7">Item 3</div>
+    </div>
+    <style>
+        .flex-container7 {
+            display: flex;
+            height: 200px;
+            border: 2px solid black;
+            align-items: stretch; /**/
+        }
+
+        .flex-item7 {
+            background-color: lightgreen;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+
+    <h3> justify-content</h3>
+    <p>justify-content : se usa para alinear los elementos flexibles en el eje principal.</p>
+    <h4>flex-start;</h4>
+    <div class="flex-container8">
+        <div class="flex-item8">Item 1</div>
+        <div class="flex-item8">Item 2</div>
+        <div class="flex-item8">Item 3</div>
+    </div>
+    <style>
+        .flex-container8 {
+            display: flex;
+            height: 200px;
+            border: 2px solid black;
+            justify-content: flex-start; /**/
+        }
+
+        .flex-item8 {
+            background-color: lightcoral;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }   
+    </style>
+
+    <h4>flex-end;</h4>
+    <div class="flex-container9">
+        <div class="flex-item9">Item 1</div>
+        <div class="flex-item9">Item 2</div>
+        <div class="flex-item9">Item 3</div>
+    </div>
+    <style>
+        .flex-container9 {
+            display: flex;
+            height: 200px;
+            border: 2px solid black;
+            justify-content: flex-end; /**/
+        }
+
+        .flex-item9 {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+
+    <h4>center;</h4>
+    <div class="flex-container10">
+        <div class="flex-item10">Item 1</div>
+        <div class="flex-item10">Item 2</div>
+        <div class="flex-item10">Item 3</div>
+    </div>
+    <style>
+        .flex-container10 {
+            display: flex;
+            height: 200px;
+            border: 2px solid black;
+            justify-content: center; /**/
+        }
+
+        .flex-item10 {
+            background-color: lightgreen;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>    
+
+    <h4>space-between;</h4>
+    <div class="flex-container11">
+        <div class="flex-item11">Item 1</div>
+        <div class="flex-item11">Item 2</div>
+        <div class="flex-item11">Item 3</div>
+    </div>
+    <style>
+        .flex-container11 {
+            display: flex;
+            height: 200px;
+            border: 2px solid black;
+            justify-content: space-between; /**/
+        }
+
+        .flex-item11 {
+            background-color: lightcoral;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+
+    <h4>space-around;   </h4>
+    <div class="flex-container12">
+        <div class="flex-item12">Item 1</div>
+        <div class="flex-item12">Item 2</div>
+        <div class="flex-item12">Item 3</div>
+    </div>
+    <style>
+        .flex-container12 {
+            display: flex;
+            height: 200px;
+            border: 2px solid black;
+            justify-content: space-around; /**/
+        }
+
+        .flex-item12 {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+
+    <h4>space-evenly;</h4>
+    <div class="flex-container13">
+        <div class="flex-item13">Item 1</div>
+        <div class="flex-item13">Item 2</div>
+        <div class="flex-item13">Item 3</div>
+    </div>
+    <style>
+        .flex-container13 {
+            display: flex;
+            height: 200px;
+            border: 2px solid black;
+            justify-content: space-evenly; /**/
+        }
+
+        .flex-item13 {
+            background-color: lightgreen;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="amarillo">
+        Este es un ejemplo de color de texto y color de fondo.
+        <p>Este es un párrafo dentro de un div con color de texto y color de fondo.</p>
+        <p class="color-sistema">
+            ejemplo de color de texto y color de fondo definidos por el sistema operativo.
+        </p>
+        <div class="color-sistema">
+            Este es un ejemplo de color de texto y color de fondo definidos por el sistema operativo.
+        </div>
+        <input type="text" class="color-sistema2" value="Este es un ejemplo de color de texto y color de fondo definidos por el sistema operativo.">
+
+    </div>
+
+    <style>
+        .amarillo{
+            color: #000000;
+            background-color: red;
+        }
+        .amarillo p{
+            color: #000000;
+            background-color: yellow;
+        }
+        .amarillo .color-sistema{
+            color: #000000; /* Hexadecimal */
+            background-color: yellow; /* Parlabra Clave*/
+        }
+        .amarillo .color-sistema2{
+            color: rgb(0, 100, 0); /* RGB */
+            background-color: rgba(10, 255, 0, 0.5); /* RGBA */
+        }
+        .amarillo input[type="text"]{
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+
+</body>
+</html>

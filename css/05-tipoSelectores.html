@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="05-tipoSelectores.css">
+</head>
+<body>
+
+    <h1 >Tipos de Selectores</h1>
+    <p id="parrafo1">Este es un párrafo. con selector ID</p>
+    <p class="parrafo2">Este es un párrafo. con selector Class</p>
+    <p>Este es un párrafo. con selector de etiqueta</p>
+
+    <style>
+        p{
+            color: blue;
+        }
+        #parrafo1{
+            color: red;
+        }
+        .parrafo2{
+            color: green;
+        }
+    </style>
+
+    <button class="button">
+        Botón 1
+    </button> 
+    <button id="botonDestacado" class="button">
+        Botón Destacado
+    </button>
+
+    <style>
+        .button{
+            background-color: lightgray;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        #botonDestacado{
+            background-color: blue;
+            color: white;
+        }
+    </style>
+
+</body>
+</html>

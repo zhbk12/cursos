@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Formulario de contacto</h1>
+        <form action="procesar_formulario.php" method="post">
+            <fieldset>
+                <legend>Información personal</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Información de contacto</legend>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Información adicional</legend>
+                <div>
+                    <label>Seleccion Especcialidad</label>
+                    <select name="especialidad" id="especialidad">
+                        <option value="">Seleccion</option>
+                        <option value="informatica">Informatica</option>
+                        <option value="redes">Redes</option>
+                        <option value="seguridad">Seguridad</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Ingrese su mensaje" required></textarea><br><br>
+
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        B → Block (Bloque)
+        E → Element (Elemento)
+        M → Modifier (Modificador)
+    </pre>
+    <pre>
+        .bloque {}
+        .bloque__elemento {}
+        .bloque--modificador {}
+    </pre>
+    
+    <h2>Ejemplo __Elemento</h2>
+    <div class="card">
+        <h2 class="card__title">Producto</h2>
+        <p class="card__description">Descripción del producto</p>
+        <button class="card__button">Comprar</button>
+    </div>
+
+    <style>
+        .card {
+            width: 300px;
+            padding: 20px;
+        }
+
+        .card__title {
+            font-size: 24px;
+        }
+
+        .card__description {
+            color: gray;
+        }
+
+        .card__button {
+            padding: 10px 20px;
+        }
+    </style>
+    
+    <h2>Ejemplo --Modificador</h2>
+    <button class="button">Normal</button>
+
+    <button class="button button--primary">Principal</button>
+
+    <button class="button button--danger">Eliminar</button>
+
+        <style>
+            .button {
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .button--primary {
+                background-color: blue;
+                color: white;
+            }
+
+            .button--danger {
+                background-color: red;
+                color: white;
+            }
+        </style>
+</body>
+</html>

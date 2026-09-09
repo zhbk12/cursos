@@ -1,0 +1,6 @@
+<header>: Contiene el encabezado del sitio, incluyendo el título y la barra de navegación.
+<nav>: Proporciona enlaces de navegación dentro del sitio.
+<main>: Contiene el contenido principal de la página, incluyendo artículos y secciones.
+<article>: Representa un contenido independiente que puede ser distribuido o reutilizado.
+<section>: Define una sección temática dentro del contenido.
+<footer>: Incluye el pie de página del sitio, generalmente con información de copyright.

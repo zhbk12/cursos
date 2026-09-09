@@ -1,0 +1,40 @@
+h1 {
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-family: “Segoe UI”, arial, sans-serif;
+}
+/* Tamaños de fuente */
+h1 {
+    font-size: 2em;
+    font-size: 32px;
+}
+
+.p1{
+    text-align: left;
+}
+.p2{
+    text-align: center;
+}
+.p3{
+    text-align: right;
+}
+.p4{
+    text-align: justify;
+}
+.p5{
+    font-weight: bold;
+}
+/*Subrrallado*/
+.p6{
+    text-decoration: underline;
+}
+/*Tachado*/
+.p7{
+    text-decoration: line-through;
+}
+/*Overline*/
+.p8{
+    text-decoration: overline;
+}

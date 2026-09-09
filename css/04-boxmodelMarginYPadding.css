@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+
+.box-model{
+    color: #000000;
+    background-color: yellow;
+    margin: 10px;
+    padding: 10px;
+}
+.box-model2{
+    color: rgb(0, 100, 0);
+    background-color: rgba(10, 255, 0, 0.5);
+    margin: 20px;
+    padding-top: 10px; 
+    padding-right: 20px; 
+    padding-bottom: 15px; 
+    padding-left: 10px; 
+}
+.box-model3{
+    color: rgb(0, 0, 100);
+    background-color: rgba(0, 0, 255, 0.5);
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 40px;
+    margin-right: 20px;
+    border-width: 1px; 
+    border-style: solid; 
+    border-color: black;
+}

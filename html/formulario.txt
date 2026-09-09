@@ -1,0 +1,16 @@
+
+<form>: es el contenedor del formulario. Todos los campos y botones deben estar dentro de esta etiqueta.
+<input>: permite a los usuarios ingresar datos en formularios. Tiene varios tipos según el tipo de datos que se espera, como texto, contraseña o archivo.
+<select>: se utiliza para crear una lista de opciones, una casilla de verificación.
+<button>: utilizado para activar acciones en formularios. Puede ser de tipo "submit" para enviar datos o "reset" para restablecer los campos del formulario.
+
+---------------------------------------------------------------
+
+Tipos de Formularios <input>: 
+text: para campos de texto
+email: permite a los usuarios ingresar datos en formularios. Tiene varios tipos según el tipo de datos que se espera, como texto, contraseña o archivo.
+tel: se utiliza para crear una lista de opciones, una casilla de verificación.
+file: utilizado para activar acciones en formularios. Puede ser de tipo "submit" para enviar datos o "reset" para restablecer los campos del formulario
+color: para campos que recibirán un color;
+checkbox: para crear casillas de verificación;
+radio: para crear campos de opciones

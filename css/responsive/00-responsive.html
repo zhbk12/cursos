@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Ejemplo de Responsividad En equipos</h2>
+    <p>Este es un ejemplo básico de cómo hacer que una página web sea responsiva.</p>
+    <section>
+        <p>Este es un ejemplo de contenido que se adapta a diferentes tamaños de pantalla.</p>
+        <div class="responsive-container">
+            <div class="responsive-item">Item 1</div>
+            <div class="responsive-item">Item 2</div>
+            <div class="responsive-item">Item 3</div>
+            <div class="responsive-item">Item 4</div>
+            <div class="responsive-item">Item 5</div>
+            <div class="responsive-item">Item 6</div>
+        </div>
+        <style>
+
+            /*GTID AREA*/
+            .responsive-container{
+                display: grid;
+                grid-template-areas: 
+                    "item1 item1 item1"
+                    "item2 item3 item4"
+                    "item5 item6 item4";
+                gap: 10px; /**/
+                background-color: lightgray;
+                padding: 10px;
+            }
+
+            .responsive-item{
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+            
+            .responsive-item:nth-child(1) { 
+                grid-area: item1; 
+                background-color: lightblue; 
+            }
+            .responsive-item:nth-child(2) { 
+                grid-area: item2;
+                background-color: lightgreen; 
+            }
+            .responsive-item:nth-child(3) { 
+                grid-area: item3;
+                background-color: lightyellow;
+            }
+            .responsive-item:nth-child(4) { 
+                grid-area: item4;
+                background-color: lightcoral; 
+            }
+            .responsive-item:nth-child(5) { 
+                grid-area: item5;
+                background-color: lightpink; 
+            }
+
+            .responsive-item:nth-child(6) { 
+                grid-area: item6;
+                background-color: lightgray; 
+            }
+
+
+            /* ========================================
+                MEDIA QUERIES - BREAKPOINTS
+            ======================================== */
+
+            /* Móviles pequeños */
+            @media (max-width: 480px) {
+                .responsive-container{
+                    grid-template-areas: 
+                        "item1"
+                        "item2"
+                        "item3"
+                        "item4"
+                        "item5"
+                        "item6";
+                } 
+            }
+
+            /* Móviles */
+            @media (max-width: 576px) {
+                .responsive-container{
+                    grid-template-areas: 
+                        "item1"
+                        "item2"
+                        "item3"
+                        "item4"
+                        "item5"
+                        "item6";
+                } 
+            }
+
+            /* Tablets */
+            @media (max-width: 768px) {
+                .responsive-container{  
+                    grid-template-areas: 
+                        "item1 item1"
+                        "item2 item3"
+                        "item4 item5"
+                        "item6 item6";
+                }
+            }
+
+            /* Tablets grandes / laptops pequeñas */
+            @media (max-width: 992px) {
+                .responsive-container{  
+                    grid-template-areas: 
+                        "item1 item1"
+                        "item2 item3"
+                        "item4 item5"
+                        "item6 item6";
+                }
+            }
+
+            /* Laptops / computadoras */
+            @media (max-width: 1200px) {
+                .responsive-container{  
+                    grid-template-areas: 
+                        "item1 item1 item1"
+                        "item2 item3 item3"
+                        "item4 item5 item5"
+                        "item6 item6 item6";
+                }
+                
+            }
+
+            /* Pantallas grandes */
+            @media (max-width: 1400px) {
+                .responsive-container{
+                grid-template-areas: 
+                    "item1 item1 item1"
+                    "item2 item3 item4"
+                    "item5 item6 item4";
+                }
+            }
+
+        </style>
+    </section>
+</body>
+</html>

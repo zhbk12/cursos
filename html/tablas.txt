@@ -1,0 +1,8 @@
+<table>: es el contenedor de la tabla.
+<thead>: se utiliza para construir el encabezado de la tabla.
+<tbody>: utilizado para construir el cuerpo/contenido de la tabla.
+<tfoot>: Se utiliza para construir el pie de página de la tabla
+<tr>: utilizado para construir una fila en la tabla.
+<td>: Se utiliza para construir una columna en la tabla.
+<th>: Se utiliza para crear una columna en el encabezado de la tabla.
+<caption>: Se utiliza para insertar un título para la tabla.

@@ -1,0 +1,8 @@
+.color-sistema{
+    color: #000000; /* Hexadecimal */
+    background-color: yellow; /* Parlabra Clave*/
+}
+.color-sistema2{
+    color: rgb(0, 100, 0); /* RGB */
+    background-color: rgba(10, 255, 0, 0.5); /* RGBA */
+}
